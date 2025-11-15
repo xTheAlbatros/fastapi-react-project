@@ -1,0 +1,110 @@
+/* ======kontenera aplikacji*/
+#root{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 2rem 2rem;
+    text-align:initial;
+}
+
+/* Pełna szerokość paska */
+.full-bleed{
+    position: relative;
+    left: 50%; right: 50%;
+    margin-left: -50vw; margin-right: -50vw;
+    width: 100vw;
+}
+
+/* navbar */
+.app-navbar{
+    background: #f8f9fa !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,.06);
+}
+
+/* Linki na pasku */
+.app-navbar .nav-link{
+    color: #495057 !important;
+    padding-inline: .75rem;
+}
+.app-navbar .nav-link.active{
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+/* Typografia paska nawigacji */
+.app-navbar .navbar-brand{
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* przycisk wyloguj */
+.app-navbar .btn{ font-size: .95rem; }
+.app-navbar .badge{ font-size: .8rem; }
+
+
+/* Kalendarz */
+.calendar-cell{ min-height:64px; }
+.badge-rounded-pill{ border-radius:999px; padding:.25rem .45rem; }
+.calendar-today{
+    border-color:#f7c948 !important;
+    box-shadow:0 0 0 .15rem rgba(247,201,72,.25);
+}
+.calendar-btn,
+.calendar-btn:hover,
+.calendar-btn:focus,
+.calendar-btn:active,
+.calendar-btn:focus-visible {
+    background: #fff !important;
+    color: #212529 !important;
+    box-shadow: none;
+}
+
+
+/* Tasks */
+.task-card{
+    position:relative;
+    overflow:hidden;
+    border:2px solid var(--bs-border-color, #dee2e6);
+    border-radius:12px;
+    background:#fff;
+    padding:1rem 1rem 1rem 1.25rem;
+    margin-bottom:.9rem;
+}
+.task-card:hover{ box-shadow:0 .125rem .5rem rgba(0,0,0,.06); }
+
+/* head + meta + opis */
+.task-header{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:.75rem; margin-bottom:.35rem;
+}
+.task-meta{ color:#6c757d; font-size:.95rem; margin-bottom:.35rem; }
+.task-desc{ list-style:disc; margin:.25rem 0 0 1.25rem; padding:0; }
+.task-desc li{ margin:.15rem 0; }
+
+/* Ukończone Taska */
+.task-card.completed{
+    opacity:.55;
+}
+
+.task-diagonal{
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    pointer-events:none;
+    z-index:10;
+}
+
+.task-diagonal line{
+    stroke: rgba(33,37,41,.8);
+    stroke-width: 2px;
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: square;
+    shape-rendering: geometricPrecision;
+}
+
+/* Logo */
+.brand-logo{
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
