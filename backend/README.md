@@ -1,4 +1,4 @@
-# FastAPI Calendar & To-Do App
+# Calendar Tasks App
 
 Aplikacja webowa typu Kalendarz + Lista Zadań, stworzona w technologii FastAPI z wykorzystaniem PostgreSQL jako bazy danych oraz autoryzacji JWT.
 Projekt pozwala użytkownikom rejestrować się, logować, zarządzać zadaniami w kalendarzu i monitorować status serwera przez WebSocket.
